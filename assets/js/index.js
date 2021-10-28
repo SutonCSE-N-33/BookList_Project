@@ -34,6 +34,7 @@ add.addEventListener('click',function(e){
             data.push(dataList);
             ui.addList(element, dataList);
             ui.clearFields(bookName, code, writerName, other);
+            ui.removeList(repeatItem);
         }
 })
 
@@ -73,6 +74,12 @@ function UI(){
         writerName.value = '';
         other.value = '';
     }
+
+    UI.prototype.removeList = function(repeatItem){
+        repeatItem.classList.remove('show');
+    }
+
+   
 }
 
 
