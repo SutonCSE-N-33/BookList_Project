@@ -1,0 +1,179 @@
+/*
+Template Name: 
+Author:
+version:
+
+-----------------------------------------------------------
+Table of Contents
+-----------------------------------------------------------
+1) Common CSS
+*/
+
+/* Common CSS Start */
+body {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+span,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+/* Common CSS End */
+
+/* Random CSS Start */
+#random {
+  width: 100%;
+  height: 100vh;
+  background: #ffeff2;
+  position: relative;
+}
+
+.random_box {
+  position: absolute;
+  width: 70%;
+  top: 30px;
+  right: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: #fff;
+  box-shadow: 7px 9px 18px 5px rgba(0, 0, 0, 0.46);
+}
+
+.random_item {
+  background: #e32527;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.inner_repeat {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+.inner_repeat h4{
+  align-self: center !important;
+}
+
+.border_right{
+  position: relative;
+}
+
+.border_right::before{
+  position: absolute;
+  content: '|';
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: #000;
+  z-index: 99999;
+}
+
+.white.border_right::before{
+  color: #fff;
+}
+
+.item {
+  background: white;
+  border: 1px solid white;
+  box-shadow: 9px 8px 24px -2px rgba(114, 108, 108, 0.46);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.item h4 {
+  font-size: 16px;
+  color: #444;
+}
+
+.random_item h4 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.add_more {
+  margin-top: 25px;
+  cursor:pointer;
+}
+
+.add_more i {
+  width: 20px;
+  height: 20px;
+  line-height: 17px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  align-self: center;
+  margin-right:  5px;
+}
+
+.fas.fa-plus {
+  font-size: 10px;
+}
+
+.button {
+  padding: 10px 0;
+  text-align: right;
+}
+
+.button span {
+  color: #e32527;
+  border: 1px solid #e32527;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.button span.active {
+  background: #e32527;
+  color: #fff;
+  padding: 5px 22px;
+}
+.repeat-item{
+  display: none;
+}
+.show{
+  display: block;
+}
+.inner_repeat h4 input{
+  border:none;
+  outline:none;
+}
+/* //Random CSS End */
